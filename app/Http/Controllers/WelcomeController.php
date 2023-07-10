@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\AlgoritmaController;
 
 use Illuminate\Http\Request;
-use App\Semen;
+use App\Toko;
 use App\Kriteria;
 use App\Alternatif;
 use APP\Penilaian;
@@ -24,7 +24,7 @@ public function __construct(AlgoritmaController $algoritmaController)
 
 public function index()
 {
-    $semen = Semen::all();
+    $toko = Toko::all();
     $kriteria = Kriteria::all();
 
     
@@ -32,7 +32,7 @@ public function index()
     $ranking = $this->ranking; // Mengakses properti $ranking yang telah diinisialisasi dalam konstruktor
     // dd($ranking); // Tampilkan nilai $ranking dalam bentuk array untuk memeriksa isinya
 
-    return view('welcome')->with(['SemenList' => $semen, 'KriteriaList' => $kriteria, 'ranking' => $ranking]);
+    return view('welcome')->with(['tokoList' => $toko, 'KriteriaList' => $kriteria, 'ranking' => $ranking]);
 }
 
 

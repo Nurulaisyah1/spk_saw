@@ -60,7 +60,6 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nama Alternatif</th>
-                                        <th>Gambar</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -72,9 +71,8 @@
                                         <tr>
                                             <td>{{ $no++ }}</td>
                                             <td>{{ $row->nama_alternatif }}</td>
-                                            <td><img src="{{ asset('gambar-semen/Semen-Jakarta.jpg') }}"
-                                                    alt="description of myimage" style="width: 60px"></td>
-                                            <td>
+
+                                               <td>
                                                 <a href="{{ route('alternatif.edit', $row->id) }}"
                                                     class="btn btn-sm btn-circle btn-warning"><i class="fa fa-edit"></i></a>
                                                 <a href="{{ route('alternatif.destroy', $row->id) }}"

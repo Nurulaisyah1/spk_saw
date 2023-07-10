@@ -4,7 +4,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\KriteriaController;
-use App\Http\Controllers\SemenController;
+use App\Http\Controllers\TokoController;
 
 /*
 |--------------------------------------------------------------------------
